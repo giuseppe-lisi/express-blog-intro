@@ -6,6 +6,8 @@ app.get("/", (req, res) => {
     res.send("Server del mio blog!");
 });
 
+app.use(express.static('public/imgs'));
+
 app.get("/bacheca", (req, res) => {
     const posts = [
         {
@@ -37,7 +39,7 @@ app.get("/bacheca", (req, res) => {
             contenuto:
                 "Spiegazione dei parametri fondamentali della compressione (threshold, ratio, attack, release) e di come usarli sia per controllo dinamico che per effetti creativi.",
             immagine:
-                "https://images.unsplash.com/photo-1581090700227-4c4f50b0a5d4",
+                "https://images.unsplash.com/photo-1621976975813-10e88ae6e450",
             tag: "compressione, dinamica, mixing tips, produzione audio",
         },
         {
