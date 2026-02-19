@@ -51,8 +51,7 @@ app.get("/bacheca", (req, res) => {
             tag: "mastering, loudness, distribuzione musicale, audio professionale",
         },
     ];
-    const postsData = JSON.stringify(posts);
-    res.send(postsData);
+    res.json(posts);
 });
 
 app.listen(port, () => {
